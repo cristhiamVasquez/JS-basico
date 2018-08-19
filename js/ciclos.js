@@ -1,4 +1,4 @@
-// CICLO FOR
+// CICLO FOR SIMPLE
 
 var cajas = document.querySelectorAll(".cajas");
 console.log(`cajas ${cajas}`);
