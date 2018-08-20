@@ -6,7 +6,7 @@ SET INTERVAL (Intervalo de tiempo)
 setInterval(function, tiempo)
 ======================================*/
 
-setInterval(function() {
+var intervalo = setInterval(function() {
 
     segundo++;
     tiempo.innerHTML = segundo;
@@ -14,3 +14,11 @@ setInterval(function() {
     //console.log(`segundo ${segundo}`);
 
 }, 1000);
+
+
+setTimeout(function() {
+
+    //alert("se cumplio el tiempo")
+    clearInterval(intervalo);
+
+}, 5000);
